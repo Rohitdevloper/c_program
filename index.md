@@ -1,19 +1,14 @@
-## Welcome to coding session
+ Welcome to  C coding session
 
 You can use the [editor on GitHub](https://github.com/Rohitdevloper/c_program/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
 ```markdown
 Syntax highlighted code block
 
 # sorting
-## Types of sorting 
-### Merge sort
+Merge sort
 
 - Bulleted
 - List
@@ -21,12 +16,64 @@ Syntax highlighted code block
 1. Numbered
 2. List
 
-**Bold** and _Italic_ and `Code` text
+**Bold** and _Italic_ and `#include<stdio.h>
+#include"Merge.c"
+int main()
+{ 
+int Arr[8]={3,41,52,26,38,57,9,49};
+Merge(&Arr[0],1,8);
+for(int m=0;m<8;m++)
+printf(" %d ",Arr[m]);
+return 0;
+}` text
+**Bold** and _Italic_ and `#include<stdio.h>
+void merge(int *A,int p, int q,int r)
+{
+int n1=q-p+1;
+int n2=r-q;
+int L[n1+1];
+int R[n2+1];
+for(int i=0;i<n1;i++)
+L[i]=*(A+p+i-1);
+for(int j=0;j<n2;j++)
+R[j]=*(A+q+j);
+L[n1]=100;
+R[n2]=100;
+int i=0,j=0;
+for(int k=p-1;k<r;k++)
+{
+if(L[i]<=R[j])
+{
+*(A+k)=L[i];
+i=i+1;
+}
+else if(L[i]>R[j]) 
+{
+*(A+k)=R[j];
+j=j+1;
+}
+}
+}` text
 
-[Link](url) and ![Image](src)
+**Bold** and _Italic_ and `#include<stdio.h>
+#include<math.h>
+#include"merge.c"
+int Merge(int *A,int p,int r)
+{
+int q;
+if(p<r)
+{
+q=floor((p+r)/2);
+Merge(&*A+0,p,q);
+Merge(&*A+0,q+1,r);
+merge(&*A+0,p,q,r);
+}
+}
+` text
+[To download file ](https://github.com/Rohitdevloper/c_program) and ![Image](src)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+.
 
 ### Jekyll Themes
 
