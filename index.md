@@ -2,21 +2,17 @@
 
 You can use the [editor on GitHub](https://github.com/Rohitdevloper/c_program/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+ _Sorting is important for us.But we also need to save time and space while program running.we learn many type of sorting.Merge sort is one of type which take less space andd time to run_
 
 ```markdown
 Syntax highlighted code block
 
 # sorting
 Merge sort
+ 
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `#include<stdio.h>
+ 
+`#include<stdio.h>
 #include"Merge.c"
 int main()
 { 
@@ -26,7 +22,9 @@ for(int m=0;m<8;m++)
 printf(" %d ",Arr[m]);
 return 0;
 }` text
-**Bold** and _Italic_ and `#include<stdio.h>
+**_Functions_**
+
+`#include<stdio.h>
 void merge(int *A,int p, int q,int r)
 {
 int n1=q-p+1;
@@ -55,7 +53,8 @@ j=j+1;
 }
 }` text
 
-**Bold** and _Italic_ and `#include<stdio.h>
+
+`#include<stdio.h>
 #include<math.h>
 #include"merge.c"
 int Merge(int *A,int p,int r)
@@ -75,12 +74,8 @@ merge(&*A+0,p,q,r);
 
 .
 
-### Jekyll Themes
+**The Worst case of this sorthing is O(n)=nlgn**
 
 Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Rohitdevloper/c_program/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
-
-#Thanks you
+ 
+ Thanks you
